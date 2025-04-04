@@ -7,7 +7,7 @@ const router = express.Router();
 const upload = multer({ dest: 'uploads/' });
 
 router.post(
-  '/register',
+  '/onboard',
   upload.array('files'),
   async (req, res) => {
     try {
